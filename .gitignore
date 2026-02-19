@@ -1,0 +1,5 @@
+.gigaide/
+.idea/
+build/
+.gradle/
+jte-classes/
