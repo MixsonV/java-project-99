@@ -1,0 +1,15 @@
+spring:
+  profiles: development
+  datasource:
+    url: jdbc:h2:mem:./db
+    username: u
+    password: 1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    enabled: false

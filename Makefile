@@ -1,17 +1,11 @@
-build:
-	./gradlew build
-
 clean:
 	./gradlew clean
 
-install:
-	./gradlew install
+build:
+	./gradlew installDist
 
 test:
 	./gradlew test
-
-run:
-	./gradlew run
 
 report:
 	./gradlew jacocoTestReport
@@ -21,5 +15,8 @@ sonar:
 
 lint:
 	./gradlew checkstyleMain
+
+run:
+	./gradlew bootRun
 
 .PHONY: build

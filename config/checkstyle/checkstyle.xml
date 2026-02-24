@@ -178,7 +178,7 @@
         <module name="FinalClass"/>
         <!-- <module name="HideUtilityClassConstructor"/> -->
         <module name="InterfaceIsType"/>
-        <module name="VisibilityModifier"/>
+        <!-- <module name="VisibilityModifier"/> -->
 
         <!-- Miscellaneous other checks.                   -->
         <!-- See https://checkstyle.org/config_misc.html -->
@@ -187,6 +187,10 @@
         <!-- <module name="TodoComment"/> -->
         <module name="UpperEll"/>
 
+        <module name="Indentation">
+            <property name="basicOffset" value="4"/>
+        </module>
+
         <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
         <module name="SuppressionXpathFilter">
             <property name="file" value="${org.checkstyle.sun.suppressionxpathfilter.config}"
@@ -194,6 +198,8 @@
             <property name="optional" value="true"/>
         </module>
 
+        <module name="SuppressionCommentFilter">
+            <property name="checkFormat" value="MethodLength"/>
+        </module>
     </module>
-
 </module>

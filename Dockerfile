@@ -1,7 +1,7 @@
 FROM gradle:8.12.1-jdk21
 
-COPY . /app
-WORKDIR /app
+COPY . /java-project-99
+WORKDIR /java-project-99
 
 RUN chmod +x ./gradlew
 
