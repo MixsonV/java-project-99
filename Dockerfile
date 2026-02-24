@@ -1,8 +1,6 @@
 FROM gradle:8.12.1-jdk21
 
-WORKDIR /app
-
-COPY /app .
+WORKDIR .
 
 RUN ["./gradlew", "clean", "installDist"]
 
